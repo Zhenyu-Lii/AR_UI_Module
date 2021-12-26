@@ -31,7 +31,9 @@ def convertToLite(filename):
 
 if __name__ == '__main__':
     print("作为主程序\n")
-    default_file = "CNN1D_OPENSMILE_IS10"
-    reload(default_file)
-    convertToLite(default_file)
+    name_list = ["CNN1D_OPENSMILE_IS10", "LSTM_LIBROSA", "LSTM_OPENSMILE", "LSTM_OPENSMILE_IS09",
+                 "LSTM_OPENSMILE_IS10", "LSTM_OPENSMILE_IS11", "LSTM_OPENSMILE_IS16"]
+    for default_file in name_list:
+        reload(default_file)
+        convertToLite(default_file)
     print("转换完成\n")
