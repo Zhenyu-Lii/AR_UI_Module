@@ -1,6 +1,7 @@
 from keras.models import model_from_json
 import tensorflow as tf
 
+
 def reload(filename):
     if (filename == None):
         print("需要输入文件名")
@@ -33,7 +34,7 @@ if __name__ == '__main__':
     print("作为主程序\n")
     name_list = ["LSTM_LIBROSA", "LSTM_OPENSMILE", "LSTM_OPENSMILE_IS09",
                  "LSTM_OPENSMILE_IS10"]
-    for default_file in name_list:
-        reload(default_file)
-        convertToLite(default_file)
+    for file_name in name_list:
+        reload(file_name)
+        convertToLite(file_name)
     print("转换完成\n")

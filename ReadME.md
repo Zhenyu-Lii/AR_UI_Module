@@ -1,0 +1,9 @@
+把SER生成的所有h5和json文件放到checkpoints里面
+
+然后直接运行main
+
+在file_list里面改要转换的文件名
+
+reload.py是把h5的权重和json的模型合并成一个包含所有信息的h5
+
+converToLite.py是把keras转换成Lite
