@@ -7,7 +7,7 @@ def __call__(filename):
     open(save_path, "wb").write(tflite_model)
 
 if __name__ == '__main__':
-    default_source = "LSTM_OPENSMILE_IS11"
+    default_source = "LSTM_OPENSMILE_IS16"
     __call__(default_source)
 else:
     __call__()
